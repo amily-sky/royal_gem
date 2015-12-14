@@ -18,7 +18,7 @@ $(document).ready(function() {
 	  nextText: 'Onward →',
 	  prevText: '← Go back'
 	});
-
+ 
 });
 
 //tabs
