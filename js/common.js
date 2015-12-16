@@ -3,7 +3,13 @@ $(document).ready(function(){
         $(".main_nav ul").slideToggle("slow");
     });
 		$(".main_nav_dropdown").click(function(e){
-			$(this).toggleClass('is_active');;
+			$(this).toggleClass('is_active');
+		});
+		$(".sign_in").click(function(){
+			$('.sign_in_inner').show(100);
+		});
+		$(".close_btn").click(function(){
+			$('.sign_in_inner').hide(100);
 		});
 });
 
