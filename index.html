@@ -18,6 +18,7 @@
 	<!-- END OF CSS -->
 	<!--SCRIPT -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/jquery.placeholder.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/modernizr.custom.js"></script>
@@ -59,9 +60,10 @@
 		<!--main_nav-->
 		<nav class="main_nav">
 			<div class="container">
+				<a href="#" id="pull"></a>
 				<ul>
 					<li><a href="#">Главная</a></li>
-					<li><a href="#">Украшения</a></li>
+					<li class="main_nav_dropdown"><a href="#">Украшения</a></li>
 					<li><a href="#">Камни</a></li>
 					<li><a href="#">Подарки</a></li>
 					<li><a href="#">Скидки</a></li>
@@ -275,8 +277,8 @@
 					<div class="subscribe">
 						<div class="subscribe_inner">
 							<h6>Подпишитесь на наши новости</h6>
-							<span>Укажите Ваш E-mail:</span>
 							<form>
+								<span>Укажите Ваш E-mail:</span>
 								<input type="text">
 								<button class="btn_style">Подписаться</button>
 							</form>

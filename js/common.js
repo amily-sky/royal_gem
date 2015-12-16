@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $("#pull").click(function(){
+        $(".main_nav ul").slideToggle("slow");
+    });
+});
+
 $(document).ready(function() {
 	//fancybox
 	$('.fancybox').fancybox({

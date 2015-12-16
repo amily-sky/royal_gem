@@ -57,8 +57,8 @@ p {
  //header
  .header{
 	@include povh('');
-	padding-top: 28px;
-	margin-bottom: 40px;
+	padding-top: 27px;
+	margin-bottom: 38px;
  }
  //$header: (header_info: 750, logo: 210);
  //@include grid($header);
@@ -80,17 +80,19 @@ p {
 	.header_contact {
 		font-size: 12px;
 		float: left;
-		margin-bottom: 17px;
+		margin-bottom: 15px;
 	}
 		.header_email {
 			color: #474747;
 			padding-right: 14px;
 			border-right: 1px solid #b2b2b2;
 			text-decoration: none;
-			margin-right: 14px;
+			margin-right: 10px;
 		}
 		.header_phone {
 			@extend .header_email;
+			padding-right: 10px;
+			margin-right: 14px;
 			span {
 				color: #b2b2b2;
 			}
@@ -106,7 +108,7 @@ p {
 		float: right;
 		color: #000;
 		font-size: 12px;
-		padding: 2px 0 0 12px;
+		padding: 1px 0 0 14px;
 		background: url(../img/icons/key.png) no-repeat left center;
 	}
 	.search_wrap {
@@ -153,20 +155,25 @@ p {
 
 .main_nav {
 	background: #474747;
-	padding: 20px 0 22px;
+	padding: 16px 0 17px;
 	margin-bottom: 20px;
 	ul {
 		padding: 0 7px;
 	}
 	li {
-		float: left;
-		margin-right: 37px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 17px;
 		&:last-child {
 			margin-right: 0;
+			a {
+				padding-right: 0;
+			}
 		}
 	}
 	a {
 		font-size: 14px;
+		padding-right: 16px;
 		color: #fff;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -175,6 +182,11 @@ p {
 		}
 	}
 }
+	.main_nav_dropdown {
+		a{
+			background: url(../img/icons/dropdown.png) no-repeat center right;
+		}
+	}
 
  //main
 
@@ -187,7 +199,7 @@ p {
 	}
 		.main_banner {
 			position: relative;
-			margin-bottom: 40px;
+			margin-bottom: 31px;
 			.btn_style {
 				position: absolute;
 				right: 74px;
@@ -205,23 +217,24 @@ p {
 				font-style: italic;
 				font-weight: bold;
 				width: 306px;
+				text-align: center;
 			}
 
 //goods_wrap
 
 .goods_wrap {
-	padding-left: 10px;
+	padding-left: 7px;
 	h3 {
 		font-size: 18px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		text-transform: uppercase;
 	}
 }
 .goods_list {
-	margin-bottom: 25px;
+	margin-bottom: 19px;
 	li {
 		display:inline-block;
-		margin-right: 5px;
+		margin-right: 1px;
 	}
 	h5 {
 		font-size: 14px;
@@ -234,7 +247,7 @@ p {
 		height: 219px;
 		overflow: hidden;
 		border: 1px solid #e9e9e9;
-		margin-bottom: 13px;
+		margin-bottom: 7px;
 		img {
 			max-width: 100%;
 		}
@@ -250,24 +263,24 @@ p {
 
 //our_offers
 .our_offers {
-	padding: 30px 15px;
-	border: 1px solid #dadada;
-	margin-bottom: 25px;
+  padding: 24px 14px 30px;
+  border: 1px solid #dadada;
+  margin-bottom: 25px;
 	h3 {
 		font-size: 18px;
 		color: #27292c;
-		margin-bottom: 15px;
+		margin-bottom: 11px;
 	}
 	li {
 		color: #575756;
 		font-size: 14px;
-		margin-bottom: 5px;
+		margin-bottom: -1px;
 		&:before {
 			content: '- ';
 		}
 	}
 	ul {
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 	}
 	p {
 		font-size: 14px;
@@ -277,8 +290,8 @@ p {
 	}
 }
 	.our_offers_video {
-		width: 590px;
-		height: 340px;
+    width: 560px;
+    height: 314px;
 		border: 14px solid #ececec;
 		display: block;
 		margin: 25px auto 0;
@@ -430,7 +443,7 @@ p {
 		.sidebar_nav {
 			margin-bottom: 10px;
 			border: 1px solid #e9e9e9;
-			padding: 17px 12px 10px;
+			padding: 17px 12px 3px;
 			margin-right: 10px;
 			a {
 				color: #474747;
@@ -438,7 +451,7 @@ p {
 				text-decoration: underline;
 				padding-left: 8px;
 				display:block;
-				margin-bottom: 12px;
+				margin-bottom: 11px;
 				line-height: 1.1;
 				position: relative;
 				padding-left: 14px;
@@ -460,7 +473,7 @@ p {
 			max-width: 200px;
 			width: 100%;
 			height: auto;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 			img {
 				max-width: 100%;
 				height: auto;
