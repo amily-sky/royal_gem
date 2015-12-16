@@ -116,6 +116,7 @@ p {
 		float: left;
 		input {
 			width: 325px;
+			box-sizing: inherit;
 		}
 		button {
 			background: #7fc344;
@@ -173,7 +174,7 @@ p {
 	}
 	a {
 		font-size: 14px;
-		padding-right: 16px;
+		padding-right: 15px;
 		color: #fff;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -243,7 +244,7 @@ p {
 	}
 }
 	.goods_img {
-		width: 175px;
+		width: 174px;
 		height: 219px;
 		overflow: hidden;
 		border: 1px solid #e9e9e9;
@@ -419,6 +420,7 @@ p {
 		width: 80%;
 		margin: 0 auto;
 		padding: 8px 0 7px;
+		height: 27px;
 		.btn_style {
 			padding: 4px 16px 5px;
 			text-transform: none;
@@ -547,6 +549,7 @@ p {
 			color: #777777;
 			font-size: 14px;
 			line-height: 1.7;
+			width: 295px;
 			address  {
 				font-style: normal;
 			}
