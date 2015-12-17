@@ -11,6 +11,7 @@ $(document).ready(function(){
 		$(".close_btn").click(function(){
 			$('.sign_in_inner').hide(100);
 		});
+		$("select").selectBox();
 });
 
 $(document).ready(function() {

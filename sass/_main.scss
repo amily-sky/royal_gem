@@ -720,7 +720,7 @@ p {
     right: -25px;
 	}
 
-	/*----------inner_page---------*/
+	/*----------catalog---------*/
 
 	.breadcrumbs {
 		background: #f7f7f7;
@@ -764,16 +764,23 @@ p {
 		}
 		.catalog_amount {
 			float: right;
-			margin-right: 100px;
+			margin-right: 0;
 			span {
 				font-size: 12px;
 				margin: 0 10px;
+			}
+			.selectBox {
+				width: 60px;
 			}
 		}
 		.catalog_category {
 			width: 32.5%;
 			display: inline-block;
 		}
+			.catalog_category_inner {
+				width: 200px;
+				margin: 0 auto;
+			}
 		.catalog_cat_title {
 			font-size: 14px;
 			margin-bottom: 8px;
@@ -809,6 +816,9 @@ p {
 				padding-left: 52px;
 				padding-right: 25px;
 				float: right;
+				&:hover {
+					background: #474747 url(../img/icons/cart-white.png) no-repeat 19px center;
+				}
 			}
 			.goods_price {
 				margin-left: 30px;
@@ -833,6 +843,14 @@ p {
 				strong {
 					font-size: 14px;
 					font-weight: bold;
+					display: block;
+    			margin-bottom: 5px;
+				}
+			}
+			.catalog_about {
+				color: #777777;
+				span {
+					margin-right: 15px;
 				}
 			}
 			.btn_not_available {
@@ -845,6 +863,7 @@ p {
 				text-transform: uppercase;
 				text-decoration: none;
 			}
+//pager
 	.pager {
 		margin-bottom: 30px;
 		overflow: hidden;
@@ -893,3 +912,67 @@ p {
 			color: #888888;
 		}
 	}
+	//end pager
+
+	//selectBox styles
+
+	select,
+.selectBox {
+	display: inline-block;
+	position: relative;
+	width: 195px;
+	height: 23px;
+	line-height: 22px;
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	border: 1px solid #ececec;
+	background: #fff;
+	text-align: left;
+}
+.selectBox:hover {
+	color: #000;
+	text-decoration: none;
+}
+.selectBox-label {
+	padding: 0 15px 0 11px;
+	margin: 0 !important;
+}
+.selectBox-arrow {
+	position: absolute;
+	left: auto;
+	right: 0px;
+	top: -1px;
+	width: 26px;
+	height: 25px;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0 !important;
+	background: #ececec url(../img/icons/select-arrow-big.png) center center no-repeat;
+}
+.selectBox-dropdown-menu {
+	position: absolute;
+	list-style: none;
+	font-size: 12px;
+	line-height: 25px;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ececec;		
+}
+.selectBox-dropdown-menu li {
+	display: block;	
+}
+.selectBox-dropdown-menu li a {
+	display: block;
+	padding: 0 10px;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;	
+}
+.selectBox-dropdown-menu li a:hover {
+	text-decoration: none;
+	background: #ececec;
+}
+
+// end selectBox styles
