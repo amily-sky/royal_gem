@@ -41,6 +41,7 @@ p {
 	color: #6a6a69;
 	font-size: 14px;
 	font-weight: normal;
+	word-wrap: break-word;
 }
 //Миксин для вычисления ширины блоков в процентах
  @mixin grid($grid) {
@@ -845,6 +846,7 @@ p {
 					font-weight: bold;
 					display: block;
     			margin-bottom: 5px;
+    			word-wrap: break-word;
 				}
 			}
 			.catalog_about {

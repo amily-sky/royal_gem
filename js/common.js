@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#pull").click(function(){
-        $(".main_nav ul").slideToggle("slow");
+        $(this).siblings("ul").slideToggle("slow");
     });
 		$(".main_nav_dropdown").click(function(e){
 			$(this).toggleClass('is_active');
