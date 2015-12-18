@@ -826,6 +826,15 @@ p {
 				margin-top: 8px;
 			}
 		}
+		.cart_btn {
+			@extend .btn_style;
+			background: #7fc344 url(../img/icons/cart-white.png) no-repeat 19px center;
+			padding-left: 52px;
+			padding-right: 25px;
+			&:hover {
+				background: #474747 url(../img/icons/cart-white.png) no-repeat 19px center;
+			}
+		}
 		.catalog_list {
 			margin-bottom: 25px;
 		}
@@ -978,3 +987,91 @@ p {
 }
 
 // end selectBox styles
+
+
+	/*----------product_wrap---------*/
+
+	.product_wrap{
+			position: relative;
+			margin-bottom: 45px;
+			overflow: hidden;
+		}
+			.product_images{
+				position: relative;
+				float: left;
+				width: 630px;
+			}
+				.big_photo{
+					position: relative;
+					width: 626px;
+					height: 442px;
+					border: 1px solid #e2e2e2;
+					margin-bottom: 12px;
+					overflow: hidden;
+					img {
+						padding: 6px;
+						height: auto;
+					}
+				}
+				.small_photo{
+					position: relative;
+					font-size: 0;
+					padding-bottom: 3px;
+				}
+					.small_photo a{
+						position: relative;
+						display: inline-block;
+						vertical-align: top;
+						width: 84px;
+						height: 84px;
+						border: 1px solid #e9e9e9;
+						margin-left: 15px;
+						overflow: hidden;
+					}
+						.small_photo a:first-child{
+							margin-left: 0;
+						}
+						.small_photo a.active{
+							box-shadow: 0 2px 0 #c25411;
+						}
+						.small_photo a img{
+							position: relative;
+							width: 100%;
+							height: auto;
+						}
+	.product_info {
+		width: 315px;
+		float: right;
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			display: block;
+			margin-bottom: 20px;
+			word-wrap: break-word;
+			line-height: 1.2;
+		}
+		.goods_price {
+			font-size: 30px;
+			float: left;
+		}
+		.cart_btn {
+			float: right;
+			margin-bottom: 30px;
+		}
+		table {
+			margin-bottom: 24px;
+		}
+		td {
+			color: #878787;
+			font-size: 14px;
+			padding: 6px 10px;
+			b {
+				color: #474747;
+			}
+		}
+	}
+	.product_description {
+		color: #878787;
+		font-size: 14px;
+		line-height: 1.28;
+	}

@@ -12,6 +12,45 @@ $(document).ready(function(){
 			$('.sign_in_inner').hide(100);
 		});
 		$("select").selectBox();
+
+		$(".product_info tr:even").css('background','#f7f7f7');
+
+		// photo gallery
+
+		$('.small_photo a img').load(function(){
+    	var w = $(this).parent().width();
+    	var h = $(this).parent().height();
+    	var imgW = $(this).width();
+    	var imgH = $(this).height();
+    	var l = 0;
+    	if (imgW>imgH) {
+    		
+    		$(this).css({
+    			'max-width':'auto',
+    			'max-height': h
+    		});
+    		imgW = $(this).width();
+    		l = (w-imgW)/2;
+    		$(this).css({
+    			'left': l
+    		});
+    	}
+    	else if(imgH>imgW){
+    		$(this).css({
+    			'max-width': w,
+    			'max-height': 'auto'
+    		});
+    	}
+    });
+
+    $('.small_photo a').click(function(){
+    	if (!$(this).hasClass('active')) {
+    		$('.small_photo a').removeClass('active');
+    		$(this).addClass('active');
+    		$('.big_photo img').attr('src', $(this).attr('href'));
+    	};
+    	return false;
+    });
 });
 
 $(document).ready(function() {
