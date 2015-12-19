@@ -122,6 +122,9 @@ $(document).ready(function() {
 	  nextText: 'Onward →',
 	  prevText: '← Go back'
 	});
- 	
+
+ 
+	 //table 
+	 $('table tr:even').css('background','#f7f7f7');
 });
 
