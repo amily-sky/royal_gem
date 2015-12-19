@@ -336,6 +336,10 @@
 	.modal_call_request {
 		width: 320px;
 	}
+	.modal_call_request input {
+		width: 295px;
+
+	}
 	.search_wrap input {
 	  width: 80px;
 	}
@@ -420,8 +424,14 @@
     width: 200px;
     padding: 20px 15px 20px;
 	}
+	.modal_call_request input {
+    width: 175px;
+	}
 	.sign_in_inner {
 		width: 210px;
+	}
+	.sign_in_inner input[type=text] {
+		width: 185px;
 	}
 	.sign_in_inner .btn_style {
 		width: 100%;
@@ -528,6 +538,9 @@
 	}
 }
 @media (max-width: 319px) {
+	.sign_in_inner input[type=text] {
+    width: 115px;
+	}
 	.search_wrap {
 		width: 200px;
 	}
@@ -625,7 +638,9 @@
 	.sign_in_inner p {
 		line-height: 1.2;
 	}
-
+	.modal_call_request input {
+	    width: 105px;
+	}
 	//item
 .product_images {
     width: 200px;

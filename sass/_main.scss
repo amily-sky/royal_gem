@@ -18,7 +18,7 @@
 	font-size: 14px;
 	color: #b2b2b2;
 	display: inline-block;
-	box-sizing: initial;
+	box-sizing: content-box; 
 	border-radius: 0;
 	margin-right: -5px;
 	width: auto;
@@ -135,8 +135,7 @@ q, blockquote {
 }
 .table_style {
 	margin-bottom: 25px;
-}
-table {
+	table {
 	th {
 		font-size: 14px;
 		font-weight: bold;
@@ -158,6 +157,8 @@ table {
 		}
 	}
 }
+}
+
 .list_title {
 	color: #575756;
 	font-size: 16px;
@@ -430,8 +431,8 @@ input[type=radio]:focus + label:before {
 			input[type=text] {
 				display: block;
 				margin-bottom: 12px;
-				width: 94%;
-				padding: 10px 3%;
+				width: 326px;
+				padding: 10px 12px;
 			}
 			.btn_style {
 				float: left;
@@ -995,8 +996,8 @@ input[type=radio]:focus + label:before {
 		width: 410px;
 		padding: 36px 30px 36px;
 		input {
-			padding: 12px 3% 14px;
-			width: 94%;
+			padding: 12px 12px 14px;
+			width: 385px;
 			display: block;
 			margin-bottom: 12px;
 			margin-right: 0;

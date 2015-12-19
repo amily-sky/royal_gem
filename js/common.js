@@ -119,6 +119,6 @@ $(document).ready(function() {
 
  
 	 //table 
-	 $('table tr:even').css('background','#f7f7f7');
+	 $('.table_style table tr:even').css('background','#f7f7f7');
 });
 

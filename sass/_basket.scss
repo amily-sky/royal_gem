@@ -48,6 +48,7 @@
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
+		background: #fff;
 		input{
 			width: 24px;
 			height: 32px;
@@ -55,6 +56,7 @@
 			text-align: center;
 			padding: 0;
 			border: none;
+			margin-left: -5px;
 		}
 		.minus, .plus{
 			position: absolute;
@@ -72,6 +74,9 @@
 			left: auto;
 			@include arr(6,6, #bebebe, r);
 		}
+	}
+	.no-borderradius .number input {
+		margin-top: 8px;
 	}
 .basket_table_text{
 	padding: 10px 0 20px 0;
@@ -141,46 +146,52 @@
 	}
 	.radio_buttons{
 		padding: 10px 0 0 0;
-		label{
-			display: block;
-			margin-bottom: 10px;
-			cursor: pointer;
+		.radio_group {
+			margin-bottom: 15px;
+		}
+		label {
 			color: #878787;
 			font-size: 14px;
-			position: relative;
-			span{
-				position: relative;
-				display: block;
-				padding-left: 25px;
-				&:before{
-					width: 11px;
-					height: 11px;
-					border: 1px solid #a7a7a7;
-					border-radius: 50%;
-					content: '';
-					position: absolute;
-					top: 2px;
-					left: 0;
-				}
-			}
 		}
-		input{
-			position: absolute;
-			z-index: 2;
-			opacity: 0;
-			width: 100%;
-			cursor: pointer;
-		}
-		input:checked + span:after{
-			width: 7px;
-			height: 7px;
-			background:#a8a8a8;
-			border-radius: 50%;
-			content: '';
-			position: absolute;
-			top: 5px;
-    		left: 3px;
-		}
+		// label{
+		// 	display: block;
+		// 	margin-bottom: 10px;
+		// 	cursor: pointer;
+		// 	color: #878787;
+		// 	font-size: 14px;
+		// 	position: relative;
+		// 	span{
+		// 		position: relative;
+		// 		display: block;
+		// 		padding-left: 25px;
+		// 		// &:before{
+		// 		// 	width: 11px;
+		// 		// 	height: 11px;
+		// 		// 	border: 1px solid #a7a7a7;
+		// 		// 	border-radius: 50%;
+		// 		// 	content: '';
+		// 		// 	position: absolute;
+		// 		// 	top: 2px;
+		// 		// 	left: 0;
+		// 		// }
+		// 	}
+		// }
+		// input{
+		// 	position: absolute;
+		// 	z-index: 2;
+		// 	opacity: 0;
+		// 	cursor: pointer;
+		// }
+		// input:checked + span:after{
+		// 	width: 7px;
+		// 	height: 7px;
+		// 	background:#a8a8a8;
+		// 	border-radius: 50%;
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 5px;
+  //   		left: 3px;
+		// }
 	}
 /*-----end-basket-personal-info----*/
 
@@ -201,6 +212,11 @@
 			font-size: 14px;
 			text-align: left;
 			padding: 7px 12px;
+		}
+		tr:last-child {
+			td {
+				border-top: none;
+			}
 		}
 	}
 	b{

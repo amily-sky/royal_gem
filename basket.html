@@ -18,19 +18,20 @@
 <![endif]--> 
 <!--[if IE 8]>
 <style>
-.search_wrap input[type=text] {
-padding: 11px 14px 3px;
-}
-.subscribe_inner input {
-height: 25px;
-line-height: 25px;
-}
-.subscribe_inner .btn_style {
-padding: 4px 16px 4px;
-}
-.main_nav li {
-margin-right: 13px;
-}
+			.search_wrap input[type=text] {
+			padding: 11px 14px 3px;
+			height: 25px;
+			}
+			.subscribe_inner input {
+			height: 25px;
+			line-height: 25px;
+			}
+			.subscribe_inner .btn_style {
+			padding: 4px 16px 4px;
+			}
+			.main_nav_dropdown ul {
+				border: 1px solid #474747;
+			}
 </style>
 <![endif]-->
 </head>
@@ -145,9 +146,9 @@ margin-right: 13px;
 								<td>790 руб.</td>
 								<td>
 									<div class="number">
-									    <span class="minus">-</span>
-									    <input type="text" value="1"/>
-									    <span class="plus">+</span>
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
 									</div>
 								</td>
 								<td>1 580 руб.</td>
@@ -159,9 +160,9 @@ margin-right: 13px;
 								<td>790 руб.</td>
 								<td>
 									<div class="number">
-									    <span class="minus">-</span>
-									    <input type="text" value="1"/>
-									    <span class="plus">+</span>
+										<span class="minus">-</span>
+										<input type="text" value="1"/>
+										<span class="plus">+</span>
 									</div>
 								</td>
 								<td>1 580 руб.</td>
@@ -203,26 +204,26 @@ margin-right: 13px;
 					<div class="basket_personal_delivery">
 						<div class="basket_subtitle">Выберите доставку:</div>
 						<div class="radio_buttons">
-							<label>
-								<input type="radio" name="radio_button">
-								<span>Самовывоз в Москве (Бесплатно)</span>
-							</label>
-							<label>
-								<input type="radio" name="radio_button">
-								<span>Курьерская доставка по Москве (290 руб.)</span>
-							</label>
-							<label>
-								<input type="radio" name="radio_button">
-								<span>Курьер в Ваш город</span>
-							</label>
-							<label>
-								<input type="radio" name="radio_button">
-								<span>Самовывоз в Вашем городе</span>
-							</label>
-							<label>
-								<input type="radio" name="radio_button">
-								<span>Почта России (290 руб.)</span>
-							</label>
+						<div class="radio_group">
+							<input type="radio" name="radio_button" id="radio1">
+							<label for="radio1">Самовывоз в Москве (Бесплатно)</label>
+						</div>
+						<div class="radio_group">
+							<input type="radio" name="radio_button" id="radio2">
+							<label for="radio2">Курьерская доставка по Москве (290 руб.)</label>
+						</div>
+						<div class="radio_group">
+							<input type="radio" name="radio_button" id="radio3">
+							<label for="radio3">Курьер в Ваш город</label>
+						</div>
+						<div class="radio_group">
+							<input type="radio" name="radio_button" id="radio4">
+							<label for="radio4">Самовывоз в Вашем городе</label>
+						</div>
+						<div class="radio_group">
+							<input type="radio" name="radio_button" id="radio5">
+							<label for="radio5">Почта России (290 руб.)</label>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -269,72 +270,72 @@ margin-right: 13px;
 				</div>
 				<!--end-order-comment-->
 
-					<!--subscribe-->
-					<div class="subscribe">
-						<div class="subscribe_inner">
-							<h6>Подпишитесь на наши новости</h6>
-							<form>
-								<span>Укажите Ваш E-mail:</span>
-								<input type="text">
-								<button class="btn_style">Подписаться</button>
-							</form>
-						</div>
-					</div>
-					<!--end-subscribe-->
-				</div>
-
-			</div>
-			<!--end-main-->
-			<!--footer-->
-			<footer class="footer">
-				<div class="footer_inner">
-					<div class="container">
-						<div class="logo">
-							<img src="img/logo-footer.png" height="60" width="208" alt="">
-						</div>
-						<div class="footer_call_request">
-							<a href="tel:74955925880" class="footer_phone">+7 (495) 592-5880</a>
-							<a href="#" class="btn_call_request">
-								<img src="img/icons/phone.png" alt="" height="23" width="23">Заказать звонок</a>
-							</div>
-							<div class="footer_contacts">
-								<address>
-									Он-лайн магазин «Royalgem», Москва
-									м. Дубровка, ул. 2-ая Машиностроения д.17
-								</address>
-								<div class="footer_work_time">
-									<div>пн-пт 10:00 - 19:30</div>
-									<div>сб-вс 11:00 - 18:00</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="footer_copyright">
-						<div class="container">
-							<small>&copy; Интернет-магазин Royalgem, 2011-2015 Все права защищены.</small>
-						</div>
-					</div>
-					<div class="modal modal_call_request" id="modal_call_request">
-						<div class="modal_title">Заказать звонок</div>
+				<!--subscribe-->
+				<div class="subscribe">
+					<div class="subscribe_inner">
+						<h6>Подпишитесь на наши новости</h6>
 						<form>
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Телефон">
-							<button type="submit" class="btn_style">Отправить</button>
+							<span>Укажите Ваш E-mail:</span>
+							<input type="text">
+							<button class="btn_style">Подписаться</button>
 						</form>
 					</div>
-				</footer>
-				<!--end-footer-->
+				</div>
+				<!--end-subscribe-->
 			</div>
-			<link href='https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' property="">
-			<!--SCRIPT -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-			<script src="js/jquery.js"></script>
-			<script src="js/jquery.selectBox.js"></script>
-			<script src="js/jquery.placeholder.js"></script>
-			<script src="js/jquery.fancybox.pack.js"></script>
-			<script src="js/modernizr.custom.js"></script>
-			<script src="js/jquery.bxslider.min.js"></script>
-			<script src="js/common.js"></script>
-			<!-- END OF SCRIPT -->
-		</body>
-		</html>
+
+		</div>
+		<!--end-main-->
+		<!--footer-->
+		<footer class="footer">
+			<div class="footer_inner">
+				<div class="container">
+					<div class="logo">
+						<img src="img/logo-footer.png" height="60" width="208" alt="">
+					</div>
+					<div class="footer_call_request">
+						<a href="tel:74955925880" class="footer_phone">+7 (495) 592-5880</a>
+						<a href="#" class="btn_call_request">
+							<img src="img/icons/phone.png" alt="" height="23" width="23">Заказать звонок</a>
+						</div>
+						<div class="footer_contacts">
+							<address>
+								Он-лайн магазин «Royalgem», Москва
+								м. Дубровка, ул. 2-ая Машиностроения д.17
+							</address>
+							<div class="footer_work_time">
+								<div>пн-пт 10:00 - 19:30</div>
+								<div>сб-вс 11:00 - 18:00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_copyright">
+					<div class="container">
+						<small>&copy; Интернет-магазин Royalgem, 2011-2015 Все права защищены.</small>
+					</div>
+				</div>
+				<div class="modal modal_call_request" id="modal_call_request">
+					<div class="modal_title">Заказать звонок</div>
+					<form>
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Телефон">
+						<button type="submit" class="btn_style">Отправить</button>
+					</form>
+				</div>
+			</footer>
+			<!--end-footer-->
+		</div>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' property="">
+		<!--SCRIPT -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.selectBox.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- END OF SCRIPT -->
+	</body>
+	</html>
