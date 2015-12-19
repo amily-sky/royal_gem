@@ -115,13 +115,7 @@ $(document).ready(function() {
         return false;
     });
 
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
-	});
+	
 
  
 	 //table 
