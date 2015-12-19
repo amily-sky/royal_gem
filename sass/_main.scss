@@ -386,8 +386,6 @@ p {
 	.goods_price {
 		font-size: 18px;
 		color: #7fc344;
-		padding-right: 15px;
-		background: url(../img/icons/ruble.png) no-repeat center right;
 		display: inline-block;
 	}
 //end goods_wrap
@@ -1056,6 +1054,7 @@ p {
 		.goods_price {
 			font-size: 30px;
 			float: left;
+			font-weight: bold;
 		}
 		.cart_btn {
 			float: right;
