@@ -11,6 +11,22 @@
 	.search_wrap input {
     width: 180px;
 	}
+		#pull {
+		display: block;
+		position: relative;
+		padding-left: 8px;
+		margin-bottom: 15px;
+		padding-bottom: 1px;
+		&:before {
+	 	 content: "";
+	 	 background: url(../img/icons/menu.png) no-repeat;
+	 	 width: 20px;
+	 	 height: 16px;
+	 	 position: absolute;
+	 	 right: 15px;
+	 	 top: 2px;
+		}
+	}
 	.main-content {
     width: 75.125%;
   }
@@ -20,6 +36,7 @@
   }
 	.main_nav li {
 		margin-bottom: 5px;
+		display: block;
 	}
   .main_nav a {
     padding: 5px 15px;
@@ -137,22 +154,6 @@
 	}
 	.subscribe_inner input {
 		width: 130px;
-	}
-	#pull {
-		display: block;
-		position: relative;
-		padding-left: 8px;
-		margin-bottom: 15px;
-		padding-bottom: 1px;
-		&:before {
-   	 content: "";
-   	 background: url(../img/icons/menu.png) no-repeat;
-   	 width: 20px;
-   	 height: 16px;
-   	 position: absolute;
-   	 right: 15px;
-   	 top: 2px;
-		}
 	}
 	.main_nav ul {
 		display: none;

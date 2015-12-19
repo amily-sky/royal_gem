@@ -31,8 +31,7 @@
 })(jQuery);
 $(document).ready(function(){
 	$(".tabs").lightTabs();
-});
-$(document).ready(function(){
+});$(document).ready(function(){
     $("#pull").click(function(){
         $(this).siblings("ul").slideToggle("slow");
     });
