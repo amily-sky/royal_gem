@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="initial-scale=1"/>
+	<title>title</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<!--End Favicon-->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link href="css/screen.css" rel="stylesheet" media="screen">
+	<!-- END OF CSS -->
+<!--[if IE]>  
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+<![endif]--> 
+<!--[if IE 8]>
+<style>
+.search_wrap input[type=text] {
+padding: 11px 14px 3px;
+}
+.subscribe_inner input {
+height: 25px;
+line-height: 25px;
+}
+.subscribe_inner .btn_style {
+padding: 4px 16px 4px;
+}
+.main_nav li {
+margin-right: 13px;
+}
+</style>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<!--header-->
+		<header class="header">
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="img/logo.png" height="60" width="208" alt="">
+				</a>
+				<div class="header_info">
+					<div class="header_contact">
+						<a href="mailto:info@royalgem.ru" class="header_email">info@royalgem.ru</a>
+						<a href="tel:74955925880" class="header_phone"><span>+7 (495)</span> 592-5880 </a>
+						<a href="#modal_call_request" class="header_request_call fancybox">Заказать звонок</a>
+					</div>
+					<div class="sign_in_wrap">
+						<a href="#" class="sign_in">Вход</a>
+						<div class="sign_in_inner">
+							<p>Добро пожаловать!</p>
+							<form>
+								<input type="text" placeholder="Логин">
+								<input type="text" placeholder="Пароль">
+								<div class="checkbox_label">
+									<input type="checkbox" checked id="checkbox">
+									<label for="checkbox">Запомнить меня</label>
+								</div>
+								<button class="btn_style">Войти</button>
+								<a href="#" class="sign_in_reg">Регистрация</a>
+								<a href="#" class="sign_in_reg">Забыли пароль?</a>
+							</form>
+							<button class="close_btn"></button>
+						</div>
+					</div>
+					<form class="search_wrap">
+						<input type="text" placeholder="Поиск">
+						<button>Поиск</button>
+					</form>
+					<a href="#" class="cart_wrap">
+						<div class="cart_inner"><span class="cart_goods_amount">1 товар</span><span class="cart_price">10 579 руб.</span>
+							<span class="cart_arrow"><img src="img/icons/select-arrow.png" height="4" width="6" alt=""></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!--end-header-->
+		<!--main_nav-->
+		<nav class="main_nav">
+			<div class="container">
+				<a href="#" id="pull"></a>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li class="main_nav_dropdown">
+						<a href="#">Украшения</a>
+						<ul>
+							<li><a href="#">Каталог камней</a></li>
+							<li><a href="#">Новые поступления</a></li>
+							<li><a href="#" class="is_active">Семинары о камнях</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Геммологическая</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Камни</a></li>
+					<li><a href="#">Подарки</a></li>
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">оставка и оплата</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--end-main_nav-->
+		<!--main-->
+		<div class="main">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Каталог камней</a>
+						</li>
+						<li class="current">Самоцветы</li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<div class="panel_title">
+						Доставка и оплата
+					</div>
+					<div class="headlines">
+						<h1>Заголовок Н1</h1>
+						<h2>Заголовок Н2</h2>
+						<h3>Заголовок Н3</h3>
+						<h4>Заголовок Н4</h4>
+						<h5>Заголовок Н5</h5>
+						<h6>Заголовок Н6</h6>
+					</div>
+					<div class="text_style">
+						<p>Курьерская доставка осуществляется в течение 2-4 рабочих дней с момента оформления заказа. Перед тем как доставить заказ, курьер обязательно свяжется с Вами по указанному контактному телефону для согласования даты и времени доставки.</p>
+						<p>Стоимость курьерской доставки заказов по Москве в пределах МКАД — 290 руб. При заказе на сумму от 3000 руб. доставка БЕСПЛАТНО. В случае отказа от доставленного заказа <a href="#">надлежащего</a> качества оплачиваются курьерские услуги в размере 290 руб.</p>
+						<p>Оплата заказа осуществляется наличными в рублях по факту получения товара, проверки его соответствия и качества.  Проверяйте товар в присутствии курьера. После того как курьер уехал, претензии по качеству товара не принимаются.</p>
+					</div>
+					<div class="quote">
+						<q>
+							Мы доставляем заказы курьером до двери покупателя более чем в 300 городов России. Стоимость доставки от 290 руб. Рассчитывается автоматически при оформлении заказа. Оплата производится наличными курьеру при получении. 
+						</q>
+					</div>
+					<div class="table_style">
+						<table>
+							<tr>
+								<th>Товары</th>
+								<th>Артикул</th>
+								<th>Цена</th>
+								<th>Примечание</th>
+							</tr>
+							<tr>
+								<td>Пирамида из зелёного авантюрина, 5х5х3,2 см</td>
+								<td>20-20 </td>
+								<td>790 руб.</td>
+								<td>есть на складе</td>
+							</tr>
+							<tr>
+								<td>Пирамида из зелёного авантюрина, 5х5х3,2 см</td>
+								<td>20-20 </td>
+								<td>790 руб.</td>
+								<td>есть на складе</td>
+							</tr>
+							<tr>
+								<td>Пирамида из зелёного авантюрина, 5х5х3,2 см</td>
+								<td>20-20 </td>
+								<td>790 руб.</td>
+								<td>есть на складе</td>
+							</tr>
+							<tr>
+								<td>Пирамида из зелёного авантюрина, 5х5х3,2 см</td>
+								<td>20-20 </td>
+								<td>790 руб.</td>
+								<td>есть на складе</td>
+							</tr>
+						</table>
+					</div>
+					<div class="ul_list">
+						<div class="list_title">Маркированный список</div>
+						<ul>
+							<li>Есть ли ограничения по минимальной сумме заказа?</li>
+							<li>Нужно ли заказывать товары, чтобы забрать их самовывозом?</li>
+							<li>Работаете ли Вы наложенным платежом?</li>
+							<li>На сайте интернет-магазина представлен весь ассортимент?</li>
+							<li>Товар, представленный в магазине, натуральный?</li>
+							<li>Как проверить натуральность товара, продаваемого в магазине? Возможно ли получить сертификат на продаваемый товар?</li>
+						</ul>
+					</div>
+					<div class="ol_list">
+						<div class="list_title">Нумерованный список</div>
+						<ol>
+							<li>Возможно ли отменить или изменить совершенный заказ?</li>
+							<li>Какие камни помогают от каких болезней? Какие камни подойдут для моего знака зодиака?</li>
+							<li>Возможно ли заказать товар оптом?</li>
+							<li>Возможно ли заказать в магазине товар, которого нет в наличии?</li>
+							<li>Как производится возврат или обмен товара?</li>
+						</ol>
+					</div>
+					<div class="form_style">
+						<div class="form_title">Название формы</div>
+						<div class="float_left">
+						<input type="text" placeholder="Обязательное поле *">
+						<input type="text" placeholder="Еще одно поле обязательное *">
+						<input type="text" placeholder="Не обязательное поле">
+						<button class="btn_style" type="subscribe">Кнопка отправить</button>
+						</div>
+						<div class="float_right">
+						<div class="radio_group">
+						<div class="input_group">
+						<input type="radio" value="1" name="radio" id="radio1"> 
+						<label for="radio1">Самовывоз в Москве (Бесплатно)</label>
+						</div>
+						<div class="input_group">
+						<input type="radio" value="2" name="radio" id="radio2">
+						<label for="radio2">Курьерская доставка по Москве (290 руб.)</label>
+					</div>
+					</div>
+					<div class="checkbox_group">
+						<div class="input_group">
+						<input type="checkbox" id="checkbox1" class="checkbox">
+						<label for="checkbox1">Курьер в Ваш город</label>
+					</div>
+						<div class="input_group">
+						<input type="checkbox" id="checkbox2" class="checkbox">
+						<label for="checkbox2">Самовывоз в Вашем городе</label>
+					</div>
+					</div>
+						<select>
+							<option>Выберите</option>
+							<option>Пункт первый</option>
+							<option>Второй пункт</option>
+							<option>Еще один может быть</option>
+							<option>Спасибо, это последний</option>
+						</select>
+						</div>
+					</div>
+				</div>
+				<!--sidebar-->
+				<aside class="sidebar">
+					<div class="sidebar_nav">
+						<ul>
+							<li><a href="#">Каталог камней</a></li>
+							<li><a href="#">Новые поступления</a></li>
+							<li><a href="#">Семинары о камнях</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Геммологическая
+								экспертиза</a></li>
+								<li><a href="#">Вакансии</a></li>
+							</ul>
+						</div>
+						<div class="sidebar_banner">
+							<img src="img/banner.jpg" height="269" width="200" alt="">
+						</div>
+						<div class="sidebar_social">
+							<img src="img/vk.jpg" height="400" width="200" alt="">
+						</div>
+					</aside>
+					<!--end-sidebar-->
+
+					<!--subscribe-->
+					<div class="subscribe">
+						<div class="subscribe_inner">
+							<h6>Подпишитесь на наши новости</h6>
+							<form>
+								<span>Укажите Ваш E-mail:</span>
+								<input type="text">
+								<button class="btn_style">Подписаться</button>
+							</form>
+						</div>
+					</div>
+					<!--end-subscribe-->
+				</div>
+
+			</div>
+			<!--end-main-->
+			<!--footer-->
+			<footer class="footer">
+				<div class="footer_inner">
+					<div class="container">
+						<div class="logo">
+							<img src="img/logo-footer.png" height="60" width="208" alt="">
+						</div>
+						<div class="footer_call_request">
+							<a href="tel:74955925880" class="footer_phone">+7 (495) 592-5880</a>
+							<a href="#" class="btn_call_request">
+								<img src="img/icons/phone.png" alt="" height="23" width="23">Заказать звонок</a>
+							</div>
+							<div class="footer_contacts">
+								<address>
+									Он-лайн магазин «Royalgem», Москва
+									м. Дубровка, ул. 2-ая Машиностроения д.17
+								</address>
+								<div class="footer_work_time">
+									<div>пн-пт 10:00 - 19:30</div>
+									<div>сб-вс 11:00 - 18:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer_copyright">
+						<div class="container">
+							<small>&copy; Интернет-магазин Royalgem, 2011-2015 Все права защищены.</small>
+						</div>
+					</div>
+					<div class="modal modal_call_request" id="modal_call_request">
+						<div class="modal_title">Заказать звонок</div>
+						<form>
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Телефон">
+							<button type="submit" class="btn_style">Отправить</button>
+						</form>
+					</div>
+				</footer>
+				<!--end-footer-->
+			</div>
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' property="">
+			<!--SCRIPT -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script src="js/jquery.js"></script>
+			<script src="js/jquery.selectBox.js"></script>
+			<script src="js/jquery.placeholder.js"></script>
+			<script src="js/jquery.fancybox.pack.js"></script>
+			<script src="js/modernizr.custom.js"></script>
+			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/common.js"></script>
+			<!-- END OF SCRIPT -->
+		</body>
+		</html>
