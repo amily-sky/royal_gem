@@ -92,7 +92,7 @@ h6{font-size:14px;}
     @include button_gradient_hover('');
   }
 }
-input[type=text], input[type=email], input[type=phone], input[type=search], textarea{
+input[type=text], input[type=email], input[type=tel], input[type=search], textarea{
    @include input('');
    &:focus{
      @include input_focus('');

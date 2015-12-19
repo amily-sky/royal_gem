@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="initial-scale=1"/>
+	<title>title</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<!--End Favicon-->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link href="css/screen.css" rel="stylesheet" media="screen">
+	<!-- END OF CSS -->
+<!--[if IE]>  
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+<![endif]--> 
+<!--[if IE 8]>
+<style>
+.search_wrap input[type=text] {
+padding: 11px 14px 3px;
+}
+.subscribe_inner input {
+height: 25px;
+line-height: 25px;
+}
+.subscribe_inner .btn_style {
+padding: 4px 16px 4px;
+}
+.main_nav li {
+margin-right: 13px;
+}
+</style>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<!--header-->
+		<header class="header">
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="img/logo.png" height="60" width="208" alt="">
+				</a>
+				<div class="header_info">
+					<div class="header_contact">
+						<a href="mailto:info@royalgem.ru" class="header_email">info@royalgem.ru</a>
+						<a href="tel:74955925880" class="header_phone"><span>+7 (495)</span> 592-5880 </a>
+						<a href="#modal_call_request" class="header_request_call fancybox">Заказать звонок</a>
+					</div>
+					<div class="sign_in_wrap">
+						<a href="#" class="sign_in">Вход</a>
+						<div class="sign_in_inner">
+							<p>Добро пожаловать!</p>
+							<form>
+								<input type="text" placeholder="Логин">
+								<input type="text" placeholder="Пароль">
+								<div class="checkbox_label">
+									<input type="checkbox" checked id="checkbox">
+									<label for="checkbox">Запомнить меня</label>
+								</div>
+								<button class="btn_style">Войти</button>
+								<a href="#" class="sign_in_reg">Регистрация</a>
+								<a href="#" class="sign_in_reg">Забыли пароль?</a>
+							</form>
+							<button class="close_btn"></button>
+						</div>
+					</div>
+					<form class="search_wrap">
+						<input type="text" placeholder="Поиск">
+						<button>Поиск</button>
+					</form>
+					<a href="#" class="cart_wrap">
+						<div class="cart_inner"><span class="cart_goods_amount">1 товар</span><span class="cart_price">10 579 руб.</span>
+							<span class="cart_arrow"><img src="img/icons/select-arrow.png" height="4" width="6" alt=""></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!--end-header-->
+		<!--main_nav-->
+		<nav class="main_nav">
+			<div class="container">
+				<a href="#" id="pull"></a>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li class="main_nav_dropdown">
+						<a href="#">Украшения</a>
+						<ul>
+							<li><a href="#">Каталог камней</a></li>
+							<li><a href="#">Новые поступления</a></li>
+							<li><a href="#" class="is_active">Семинары о камнях</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Геммологическая</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Камни</a></li>
+					<li><a href="#">Подарки</a></li>
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">оставка и оплата</a></li>
+					<li><a href="#">Вопросы и ответы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--end-main_nav-->
+		<!--main-->
+		<div class="main">
+			<div class="container">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Каталог камней</a>
+					</li>
+					<li class="current">Самоцветы</li>
+				</ul>
+			</div>
+				<div class="main-content">
+					<div class="catalog">
+						<div class="catalog_header">
+							<span class="catalog_title">Контакты магазина</span>
+							
+						</div>
+						<!---contacts-text-->	
+						<div class="contacts_text">
+							<p><img src="img/icons/spot.png" alt="">115088, Москва, ул. 2-ая Машиностроения, д. 17, корп. 1, метро Дубровка </p>
+							<div>
+								<dl>
+									<dt><img src="img/icons/tel_icon.png" alt="">Телефоны:</dt>
+									<dd>+7 (495) 984-83-87 <br>
+									  8 (800) 775-45-19<br>
+									+7 (926) 983-63-13<br>
+									+7 (903) 567-26-67 </dd>
+								</dl>
+								<dl>
+									<dt><img src="img/icons/time.png" alt="">Время работы магазина:</dt>
+									<dd>Понедельник - Пятница<br>
+									10:00-19:30<br>
+									Суббота - Воскресенье<br>
+									11:00-18:00 </dd>
+								</dl>
+								<dl>
+									<dt><img src="img/icons/letter.png" alt="">Электронный адрес:</dt>
+									<dd>info@royalgem.ru </dd>
+								</dl>
+							</div>
+						</div>
+						<!--end-contacts-text-->
+
+						<!---contacts-gallery-->		
+						<div class="contacts_gallery">
+							<a href="img/gal_img.jpg" class='fancybox' data-fancybox-group="gal"><img src="img/gal_img.jpg" alt=""></a>
+							<a href="img/gal_img.jpg" class='fancybox' data-fancybox-group="gal"><img src="img/gal_img.jpg" alt=""></a>
+							<a href="img/gal_img.jpg" class='fancybox' data-fancybox-group="gal"><img src="img/gal_img.jpg" alt=""></a>
+							<a href="img/gal_img.jpg" class='fancybox' data-fancybox-group="gal"><img src="img/gal_img.jpg" alt=""></a>
+							<a href="img/gal_img.jpg" class='fancybox' data-fancybox-group="gal"><img src="img/gal_img.jpg" alt=""></a>
+							<a href="img/gal_img.jpg" class='fancybox' data-fancybox-group="gal"><img src="img/gal_img.jpg" alt=""></a>
+						</div>
+						<!--end-contacts-gallery-->		
+
+						<!---contacts-map-->		
+						<div class="contacts_map">
+							<h6>Где магазин «ROYAL GEM»?</h6>
+							<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=G6lSq0Dw1U-SylVPRrniZItfz0BeFvCX&width=712&height=356&lang=uk_UA&sourceType=constructor"></script>
+						</div>
+						<!--end-contacts-map-->	
+
+						<!---contacts-txt-->		
+						<article class="bottom_contacts">
+							<h5>Как добраться</h5>
+							<p>5 минут пешком от метро Дубровка. На станции метро Дубровка — один выход (подъём эскалатором). Выйдя за хлопающую стеклянную дверь метро, повернуть налево и затем сразу направо и по лестнице подняться на улицу. Выйдя на поверхность, продолжать двигаться в том же направлении до большого перекрестка Шарикоподшипниковской улицы с улицей 2-я Машиностроения. На перекрестке повернуть налево (дорогу переходить не надо). Двигаясь по улице 2-я Машиностроения вдоль дома 17, миновать вход в колледж, миновать вход в клуб исторического фехтования "Экскалибур", миновать шлагбаум, в 10 метрах от которого увидите вход в магазин камней «Камневеды». </p>
+						</article>
+						<!--end-contacts-txt-->	
+					</div>  
+				</div>
+				<!--end-tabs-->
+				<!--sidebar-->
+				<aside class="sidebar">
+					<div class="sidebar_nav">
+						<ul>
+							<li><a href="#">Каталог камней</a></li>
+							<li><a href="#">Новые поступления</a></li>
+							<li><a href="#">Семинары о камнях</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Геммологическая
+								экспертиза</a></li>
+								<li><a href="#">Вакансии</a></li>
+							</ul>
+						</div>
+						<div class="sidebar_banner">
+							<img src="img/banner.jpg" height="269" width="200" alt="">
+						</div>
+						<div class="sidebar_social">
+							<img src="img/vk.jpg" height="400" width="200" alt="">
+						</div>
+					</aside>
+					<!--end-sidebar-->
+
+					<!--subscribe-->
+					<div class="subscribe">
+						<div class="subscribe_inner">
+							<h6>Подпишитесь на наши новости</h6>
+							<form>
+								<span>Укажите Ваш E-mail:</span>
+								<input type="text">
+								<button class="btn_style">Подписаться</button>
+							</form>
+						</div>
+					</div>
+					<!--end-subscribe-->
+				</div>
+
+			</div>
+			<!--end-main-->
+			<!--footer-->
+			<footer class="footer">
+				<div class="footer_inner">
+					<div class="container">
+						<div class="logo">
+							<img src="img/logo-footer.png" height="60" width="208" alt="">
+						</div>
+						<div class="footer_call_request">
+							<a href="tel:74955925880" class="footer_phone">+7 (495) 592-5880</a>
+							<a href="#" class="btn_call_request">
+								<img src="img/icons/phone.png" alt="" height="23" width="23">Заказать звонок</a>
+							</div>
+							<div class="footer_contacts">
+								<address>
+									Он-лайн магазин «Royalgem», Москва
+									м. Дубровка, ул. 2-ая Машиностроения д.17
+								</address>
+								<div class="footer_work_time">
+									<div>пн-пт 10:00 - 19:30</div>
+									<div>сб-вс 11:00 - 18:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer_copyright">
+						<div class="container">
+							<small>&copy; Интернет-магазин Royalgem, 2011-2015 Все права защищены.</small>
+						</div>
+					</div>
+					<div class="modal modal_call_request" id="modal_call_request">
+						<div class="modal_title">Заказать звонок</div>
+						<form>
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Телефон">
+							<button type="submit" class="btn_style">Отправить</button>
+						</form>
+					</div>
+				</footer>
+				<!--end-footer-->
+			</div>
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' property="">
+			<!--SCRIPT -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script src="js/jquery.js"></script>
+			<script src="js/jquery.selectBox.js"></script>
+			<script src="js/jquery.placeholder.js"></script>
+			<script src="js/jquery.fancybox.pack.js"></script>
+			<script src="js/modernizr.custom.js"></script>
+			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/common.js"></script>
+			<!-- END OF SCRIPT -->
+		</body>
+		</html>
