@@ -11,6 +11,7 @@
 	<!--End Favicon-->
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="css/screen.css" rel="stylesheet" media="screen">
 	<!-- END OF CSS -->
 	<!--[if IE]>  
@@ -120,7 +121,7 @@
 						<h3>Новые поступления</h3>
 						<div class="goods_list">
 							<ul>
-								<li>
+								<li class="wow bounceInUp">
 									<div class="goods_img">
 										<img src="img/goods1.jpg" height="219" width="175" alt="">
 									</div>
@@ -129,7 +130,7 @@
 										2000 <span class="rouble">a</span>
 									</div>
 								</li>
-								<li>
+								<li class="wow bounceInUp">
 									<div class="goods_img">
 										<img src="img/goods2.jpg" height="219" width="175" alt="">
 									</div>
@@ -138,7 +139,7 @@
 										2000 <span class="rouble">a</span>
 									</div>
 								</li>
-								<li>
+								<li class="wow bounceInUp">
 									<div class="goods_img">
 										<img src="img/goods3.jpg" height="219" width="175" alt="">
 									</div>
@@ -147,7 +148,7 @@
 										2000 <span class="rouble">a</span>
 									</div>
 								</li>
-								<li>
+								<li class="wow bounceInUp">
 									<div class="goods_img">
 										<img src="img/goods4.jpg" height="219" width="175" alt="">
 									</div>
@@ -178,7 +179,7 @@
 						<p>Наши волшебники и консультанты с радостью помогут вам подобрать идеальный и неповторимый подарок для Вас и ваших любимых.</p>
 						<p>При покупке онлайн на сумму от 3000 рублей предоставляется бесплатная доставка.</p>
 						<div class="our_offers_video">
-							<iframe src="https://www.youtube.com/embed/g2u5lsc45zE" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/g2u5lsc45zE" allowfullscreen  class="wow bounceInUp"></iframe>
 						</div>
 					</div>
 					<!--end-our_offers-->
@@ -197,7 +198,7 @@
 								<p>Ниже приведенные разделы будут интересны главным образом коллекционерам минералов, метеоритов и фоссилий (окаменелостей).</p>
 								<div class="goods_list">
 									<h4>Браслеты</h4>
-									<ul>
+									<ul  class="wow bounceInUp">
 										<li>
 											<div class="goods_img">
 												<img src="img/goods1.jpg" height="219" width="175" alt="">
@@ -236,7 +237,7 @@
 										</li>
 									</ul>
 									<h4>Амулеты</h4>
-									<ul>
+									<ul  class="wow bounceInUp">
 										<li>
 											<div class="goods_img">
 												<img src="img/goods1.jpg" height="219" width="175" alt="">
@@ -326,11 +327,11 @@
 				<div class="footer_inner">
 					<div class="container">
 						<div class="logo">
-							<img src="img/logo-footer.png" height="60" width="208" alt="">
+							<a href="/"><img src="img/logo-footer.png" height="60" width="208" alt=""></a>
 						</div>
 						<div class="footer_call_request">
 							<a href="tel:74955925880" class="footer_phone">+7 (495) 592-5880</a>
-							<a href="#" class="btn_call_request">
+							<a href="#modal_call_request" class="fancybox btn_call_request">
 								<img src="img/icons/phone.png" alt="" height="23" width="23">Заказать звонок</a>
 							</div>
 							<div class="footer_contacts">
@@ -370,6 +371,7 @@
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/wow.js"></script>
 			<script src="js/common.js"></script>
 			<!-- END OF SCRIPT -->
 		</body>

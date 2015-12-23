@@ -160,6 +160,10 @@
 	.panel_title {
     padding: 15px 20px;
   }
+
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
+  	background-size: auto;
+  }
 }
 
 @media (max-width: 799px) {
@@ -682,3 +686,7 @@
 	width: 100%;
 }
 }
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
+  	background-size: auto;
+  }

@@ -116,9 +116,9 @@ $(document).ready(function() {
     });
 
 	
-
+    new WOW().init();
  
 	 //table 
-	 $('.table_style table tr:even').css('background','#f7f7f7');
+	 
 });
 

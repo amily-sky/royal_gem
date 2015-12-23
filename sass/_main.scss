@@ -355,7 +355,7 @@ input[type=radio]:focus + label:before {
  .header{
 	position: relative;
 	padding-top: 27px;
-	margin-bottom: 38px;
+	margin-bottom: 48px;
 	height: 73px;
 	.container {
 		overflow: visible;
@@ -755,7 +755,7 @@ input[type=radio]:focus + label:before {
 .tabs_nav li{
    color: #474747;
    font-size: 18px;
-   padding: 20px 37.2px;
+   padding: 15px 37.2px;
    background: #d5d5d5;
    display:inline-block;
    cursor: pointer;
@@ -1414,3 +1414,7 @@ input[type=radio]:focus + label:before {
 			}
 		}
 	}
+
+.table_style table tr:nth-child(even){
+	background:#f7f7f7;
+}
