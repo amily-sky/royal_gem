@@ -1125,8 +1125,8 @@ input[type=radio]:focus + label:before {
 			background: #7fc344 url(../img/icons/cart-white.png) no-repeat 19px center;
 			padding-left: 52px;
 			padding-right: 25px;
-			&:hover {
-				background: #474747 url(../img/icons/cart-white.png) no-repeat 19px center;
+			&:hover, &:active, &:focus {
+				background: #474747 url(../img/icons/cart-white.png) no-repeat 19px center ;
 			}
 		}
 		.catalog_list {
