@@ -116,7 +116,14 @@ $(document).ready(function() {
     });
 
 	
-   
+   $('.js-alert').click(function () {
+
+   	swal("Here's a message!")
+
+   	
+   });
 	 
 });
+
+
 

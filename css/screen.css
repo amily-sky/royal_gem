@@ -135,7 +135,7 @@ h6 {
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=search], textarea {
+input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], textarea {
   width: 300px;
   height: 25px;
   box-sizing: border-box;
@@ -146,10 +146,10 @@ input[type=text], input[type=email], input[type=tel], input[type=search], textar
   border: 1px solid #000;
   border-radius: 3px;
 }
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, textarea:focus {
   box-shadow: 0 0 2px #99e6f9;
 }
-input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, textarea.red_input {
+input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, textarea.red_input {
   box-shadow: 0 0 2px  #ff2d50;
   background: #fdc4ce;
 }
@@ -263,7 +263,7 @@ body {
   width: 100%;
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=search], textarea {
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=search], textarea {
   padding: 7px 14px;
   border: 1px solid #e9e9e9;
   font-size: 14px;
@@ -416,7 +416,7 @@ q:after, blockquote:after {
   border-right: none;
 }
 
-.list_title {
+.list_title, .news-item {
   color: #575756;
   font-size: 16px;
   font-weight: bold;
@@ -461,7 +461,7 @@ q:after, blockquote:after {
 .form_style .float_right {
   width: 50%;
 }
-.form_style input[type=text] {
+.form_style input[type=text], .form_style input[type=password] {
   font-size: 14px;
   width: 320px;
   color: #b2b2b2;
@@ -874,10 +874,10 @@ input[type=radio]:focus + label:before {
   color: #7fc344;
 }
 
-.main_nav_dropdown.is_active > a {
+.main_nav_dropdown.is_active > a, .main_nav_dropdown:hover > a {
   background: #7fc344;
 }
-.main_nav_dropdown.is_active ul {
+.main_nav_dropdown.is_active ul, .main_nav_dropdown:hover ul {
   display: block;
 }
 
@@ -1714,6 +1714,55 @@ select,
 
 .table_style table tr:nth-child(even) {
   background: #f7f7f7;
+}
+
+/*-----------txt-------------*/
+.content_txt dd {
+  padding-bottom: 20px;
+}
+.content_txt .list_article .head, .content_txt .header_list_cat {
+  color: #575756;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 23px;
+  display: block;
+  margin-bottom: 10px;
+}
+.content_txt .list_article .head:before, .content_txt .header_list_cat:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #7fc344;
+}
+.content_txt .bx_my_order_switch {
+  padding-bottom: 20px;
+}
+.content_txt .bx_my_order_switch a {
+  padding-right: 10px;
+}
+.content_txt .form_style strong {
+  display: block;
+}
+.content_txt ul {
+  padding-bottom: 10px;
+  line-height: 1.4;
+}
+.content_txt .catalog {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.sweet-alert fieldset {
+  display: none !important;
 }
 
 /*------------basket.html------------*/

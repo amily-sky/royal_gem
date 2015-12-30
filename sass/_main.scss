@@ -12,7 +12,7 @@
  	max-width: 960px;
  	width: 100%;
  }
-	input[type=text], input[type=email], input[type=tel], input[type=search], textarea {
+	input[type=text], input[type=password], input[type=email], input[type=tel], input[type=search], textarea {
 	padding: 7px 14px;
 	border: 1px solid #e9e9e9;
 	font-size: 14px;
@@ -159,7 +159,7 @@ q, blockquote {
 }
 }
 
-.list_title {
+.list_title, .news-item {
 	color: #575756;
 	font-size: 16px;
 	font-weight: bold;
@@ -203,7 +203,7 @@ q, blockquote {
 	.float_right {
 		width: 50%;
 	}
-	input[type=text] {
+	input[type=text], input[type=password]  {
 		font-size: 14px;
 		width: 320px;
 		color: #b2b2b2;
@@ -604,7 +604,7 @@ input[type=radio]:focus + label:before {
 			}
 		}
 	}
-	.main_nav_dropdown.is_active {
+	.main_nav_dropdown.is_active, .main_nav_dropdown:hover {
 		>a {
 			background: #7fc344;
 		}
@@ -1417,4 +1417,55 @@ input[type=radio]:focus + label:before {
 
 .table_style table tr:nth-child(even){
 	background:#f7f7f7;
+}
+
+
+/*-----------txt-------------*/
+.content_txt{
+	dd{
+		padding-bottom: 20px;
+	}
+	.list_article .head, .header_list_cat{
+		color: #575756;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		position: relative;
+		padding-left: 23px;
+		display: block;
+		margin-bottom: 10px;
+		&:before {
+	    content: '';
+	    position: absolute;
+	    top: 3px;
+	    left: 0;
+	    width: 10px;
+	    height: 10px;
+	    background: #7fc344;
+		}
+	}
+	.bx_my_order_switch{
+		padding-bottom: 20px;
+		a{
+			padding-right: 10px;
+		}
+	}
+
+	.form_style strong{
+		display: block;
+
+	}
+	ul{
+		padding-bottom: 10px;
+		line-height: 1.4;
+	}
+	.catalog{
+		column-count: 3;
+		column-gap: 50px;
+	}
+
+}
+
+.sweet-alert fieldset{
+	display: none !important;
 }
